@@ -1,0 +1,48 @@
+// News scss
+
+.news {
+	ul {
+		margin-bottom: 20px;
+		font-size: 14px; 
+	}
+	background: #222222;
+	color: $white-color;
+	h2 {
+		text-transform: uppercase;
+		margin-bottom: 20px;
+	}
+}
+
+.news-content {
+	padding: 70px 15px;
+	@include breakpoint(desktop) {
+		padding: 70px 70px 70px 100px; 
+	}
+
+}
+
+
+.bgd-1 {
+	background: url(../assets/images/slika1.jpg);
+	background-size: cover;
+	min-height: 377px;
+}
+
+.bgd-2 {
+	background: url(../assets/images/slika2.jpg);
+	background-size: cover;
+	min-height: 377px;
+}
+
+.news-1 {
+	color: $color-dark;
+	background: #f3f3f3;
+	ul {
+		margin-bottom: 20px; 
+		font-size: 14px; 
+	}
+	h2 {
+		text-transform: uppercase;
+		margin-bottom: 20px;
+	}
+}

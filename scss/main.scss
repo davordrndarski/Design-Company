@@ -1,0 +1,59 @@
+@import 'base/module-base';
+@import 'helpers/module-helpers';
+@import 'layout/module-layout';
+@import 'components/module-components';
+@import 'pages/module-pages';
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+a {
+	text-decoration: none;
+	color: $light-gray;
+
+}
+
+img {
+	max-width: 100%;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+h3 {
+	font-size: 17px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+}
+
+
+p {
+	line-height: 1.5;
+	font-size: 14px;
+	
+}

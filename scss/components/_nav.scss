@@ -1,0 +1,170 @@
+// Components scss
+
+.nav {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.95);
+	background: rgba(0, 0, 0, 0.95);
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+	@include breakpoint(desktop) {
+		background: transparent;
+		width: auto;
+		height: auto;
+		display: block !important;
+		position: relative;
+		li {
+			display: inline-block;
+		}
+	}
+	li {
+		margin: 20px 0;
+		position: relative;
+		top: 33%;
+		@include breakpoint(desktop) {
+			top: 0;
+			margin: 0;
+		}
+		
+
+		a {
+			font-size: 15px;
+			color: $light-gray;
+			padding: 0;
+			@include breakpoint(desktop) {
+			padding: 46px 25px;	
+			&:hover {
+			@include transition (all, 0.3s);
+			border-bottom: 3px solid $blue-color;}
+			}
+		
+		
+		}
+
+}
+}
+
+
+
+.small {
+	padding: 5px 0;
+	z-index: 2;
+	background-color: rgba(0, 0, 0, 0.9);
+	background: rgba(0, 0, 0, 0.9);
+	@include breakpoint(desktop) {
+	background-color: rgba(255, 255, 255, 0.9);
+	background: rgba(255, 255, 255, 0.9);
+	}
+	@include breakpoint(desktop) {
+	.nav li a {
+    	color: $color-dark;
+    }	
+	}
+    
+}
+
+
+/* Mobile icon */
+
+* {
+  margin: 0;
+  padding: 0; 
+}
+
+/* Icon 1 */
+
+#nav-icon4 {
+	display: block;
+}
+
+@include breakpoint(desktop) {
+	#nav-icon4{
+		display: none;
+	}
+}
+
+#nav-icon4 {
+	    width: 62px;
+		height: 30px;
+		position: relative;
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+		-webkit-transition: .5s ease-in-out;
+		-moz-transition: .5s ease-in-out;
+		-o-transition: .5s ease-in-out;
+		transition: .5s ease-in-out;
+		cursor: pointer;
+	}
+
+
+#nav-icon4 span {
+	display: block;
+	position: absolute;
+	height: 2px;
+	width: 63%;
+	background: $light-gray;
+	border-radius: 9px;
+	opacity: 1;
+	left: 0;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: .25s ease-in-out;
+	-moz-transition: .25s ease-in-out;
+	-o-transition: .25s ease-in-out;
+	transition: .25s ease-in-out;
+}
+
+#nav-icon4 span:nth-child(1) {
+  top: 0px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#nav-icon4 span:nth-child(2) {
+  top: 11px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#nav-icon4 span:nth-child(3) {
+  top: 22px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#nav-icon4.open span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: -2px;
+  left: 8px;
+}
+
+#nav-icon4.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+#nav-icon4.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 25px;
+  left: 8px;
+}
+

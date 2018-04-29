@@ -1,0 +1,11 @@
+// Social scss
+
+.social li {
+	margin-left: 19px;
+	@include breakpoint(desktop) {
+		margin-left: 25px;
+	}
+	
+}
+
+

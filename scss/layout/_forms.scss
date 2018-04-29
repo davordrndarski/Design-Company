@@ -1,0 +1,43 @@
+Form scss
+
+form {
+	.pd-left {
+		padding-top: 50px;
+	}
+	@include breakpoint(desktop) {
+		.pd-left {
+		padding-top: 70px;
+	}
+	}
+
+}
+
+input {
+	width: 100%;
+	background: transparent;
+	border: 1px solid #737373;
+	border-radius: 2px;
+	padding: 5px 10px;
+	color: $white-color;
+}
+
+textarea {
+	
+	background: transparent;
+	border: 1px solid #737373;
+	border-radius: 2px;
+	padding: 5px 10px;
+	color: $white-color;
+	
+}
+
+
+
+.submit {
+	padding: 10px 30px;
+	background: $blue-color;
+	color: $white-color;
+	display: inline-block;
+	text-transform: uppercase;
+	border-radius: 2px;
+}

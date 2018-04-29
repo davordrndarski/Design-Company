@@ -1,0 +1,15 @@
+// Header scss
+
+header {
+	position: fixed;
+	@include transition (all, 0.3s);
+	width: 100%;
+	padding: 20px 0;
+	border-bottom: 1px solid #7d7c7b;
+	background-color: rgba(0, 0, 0, 0.5);
+	background: rgba(0, 0, 0, 0.5);
+	@include breakpoint(mobile) {
+		background: transparent;
+	}
+
+}

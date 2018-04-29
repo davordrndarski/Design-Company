@@ -1,0 +1,15 @@
+// Action scss
+
+.action {
+	background: $blue-color;
+	color: $white-color;
+
+	.fa {
+		font-size: 45px;
+		padding-right: 30px;
+	}
+
+	p {
+		margin-top:  0;
+	}
+}

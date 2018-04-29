@@ -1,0 +1,25 @@
+// Glog scss
+
+.blog {
+	color: #222222;
+	.heading  {
+		position: relative;
+		h1 {
+			font-size: 120px;
+			color: #e2e2e2;
+			line-height: 50px;
+		}
+		h2 {
+			position: relative;
+			color: #222222;
+			text-transform: uppercase;
+			font-size: 23px;
+			top: -35px;
+		}
+
+	}
+	h3 {
+		color: $blue-color;
+	}
+}
+

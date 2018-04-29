@@ -1,0 +1,40 @@
+// Agency scss
+
+.agency {
+	color: $white-color;
+	background: $blue-color;
+	.heading  {
+		position: relative;
+		h1 {
+			font-size: 120px;
+			color: $light-blue;
+			line-height: 50px;
+		}
+		h2 {
+			position: relative;
+			color: #d9d9d9;
+			text-transform: uppercase;
+			font-size: 23px;
+			top: -35px;
+		}
+
+	}
+
+	p {
+		font-size: 14px;
+	}
+
+
+	.fa {
+		font-size: 30px;
+		background: #2e85aa;
+		padding: 18px;
+		border-radius: 50%;
+		width: 86px;
+		height: 86px;
+		text-align: center;
+		line-height: 50px;
+	}
+
+}
+

@@ -1,0 +1,38 @@
+// Features scss
+
+.features {
+	background: url(../assets/images/background-2.jpg);
+	background-size: cover;
+	color: $white-color;
+	li {
+		width: 100%;
+		background: $blue-color;
+		margin-top: 20px;
+		padding: 5px 8px;
+		font-size: 13px;
+		text-transform: uppercase;
+		border-radius: 2px;
+
+	}
+	
+	li:first-child {
+		margin-top: 40px;
+	}
+
+	li:nth-child(2n) {
+		width: 80%;
+	}
+
+	li:nth-child(3n) {
+		width: 70%;
+	}
+
+	img {
+		height: 500px;
+	}
+
+	h2 {
+	margin-bottom: 20px;
+	}
+
+}
